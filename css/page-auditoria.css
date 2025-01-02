@@ -1,0 +1,292 @@
+.panel2 {
+    max-height: none !important;
+    height: auto !important;
+    overflow-y: visible !important;
+}
+/* Estilo para campos obrigatórios com borda vermelha */
+/* A borda vermelha será aplicada apenas aos campos obrigatórios não preenchidos após o envio do formulário */
+.form-group:required:invalid {
+    border: 1px solid red;
+}
+
+/* Campos válidos terão uma borda normal, sem alteração */
+.form-group:required:valid {
+    border: 1px solid #ccc;  /* Borda padrão */
+}
+
+
+
+.titulo {
+    background-color: #fff;
+}
+
+.subpanel {
+    background-color: #eef0f3;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    height: 44px;
+}
+.tittle{
+    cursor: pointer;
+}
+.tittle:hover{
+    color: #d8dde3;
+}
+
+.header-title {
+    background-color: #003366;
+    color: white;
+    padding: 8px 16px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 8;
+ 
+}
+.sub1 {
+    background-color: #1a4d80;
+    margin-left: -22px;
+    z-index: 7;
+}
+.sub2 {
+    background-color: #336699;
+    margin-left: -20px;
+    z-index: 6;
+}
+.sub3 {
+    background-color: #4d80b3;
+    margin-left: -20px;
+    z-index: 5;
+}
+.sub03 {
+    background-color: #6699cc;
+    margin-left: -20px;
+    z-index: 4;
+}
+.sub04 {
+    background-color: #80b2e6;
+    margin-left: -20px;
+    z-index: 3;
+}
+.sub_5 {
+    background-color: #99ccff;
+    margin-left: -20px;
+    z-index: 2;
+}
+.sub06 {
+    background-color: #9eb1bb;
+    margin-left: -20px;
+    z-index: 1;
+}
+.sub_7 {
+    background-color: #b9bfc3;
+    margin-left: -20px;
+    z-index: 0;
+}
+.form-control.search-input,
+.btn.search-btn {
+    height: 38px;
+    padding: 0 12px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.d-flex.align-items-center {
+    gap: 8px;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal-dialog {
+    z-index: 1050 !important;
+}
+
+.same-size-btn {
+    width: 100px;
+    text-align: center;
+}
+
+.custom:hover {
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control::placeholder {
+    color: #b9cad0;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #363d4c;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+.button{
+    width: 150px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn_fila_sair{
+    background-color: #59c190 !important;
+    border: none;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 140px;
+    height: 80px; /* Aumentando a altura do card */
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Efeito de zoom */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o card em 5% ao passar o mouse */
+}
+.card.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    transform: none;
+}
+
+.card.highlight {
+    background-color: #31b6e2;
+    color: #fff;
+    transform: scale(1.05); /* Adiciona leve destaque ao card selecionado */
+}
+
+.card-container .card {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card-container .card:not(.highlight):hover {
+    background-color: #f0f0f0;
+}
+
+.panel-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.card-title {
+    font-size: 0.9em;
+    color: #003366;
+    font-weight: 500;
+    word-wrap: break-word; /* Permitir quebra de linha */
+}
+.card-title.highlight-title {
+    color: #fff; /* Cor branca quando o card for destacado */
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme a largura desejada */
+    margin: 10px 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 250px; /* Define uma largura máxima para os inputs */
+    margin-right: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0; /* Remove margem do último input para alinhar */
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #003366;
+    white-space: nowrap; /* Impede a quebra de linha */
+    font-size: 0.9em;
+    margin-bottom: 5px; /* Espaçamento entre o label e o input */
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+.tooltip-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    font-size: 1em;
+    color: #a5bcc9;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 5px;
+}
+
+.tooltip-icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+    z-index: 10;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

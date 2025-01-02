@@ -1,0 +1,564 @@
+/* Estilos básicos */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased; /* Para Chrome no macOS */
+    -moz-osx-font-smoothing: grayscale; /* Para Firefox no macOS */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased; /* Para Chrome no macOS */
+    -moz-osx-font-smoothing: grayscale; /* Para Firefox no macOS */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-image: url('/img/bodywall.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+/* Container principal */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz com que o container ocupe toda a altura da página */
+    padding: 0; /* Remove qualquer padding extra */
+    margin: 0; /* Remove margens desnecessárias */
+    box-sizing: border-box; /* Garante que espaçamentos sejam calculados corretamente */
+}
+
+/* Header com logotipo e ajuda */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    padding: 10px 40px; /* Aumenta o padding lateral */
+    background: rgba( 255, 255, 255, 0.35 );
+    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura da página */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px ) !important;
+    -webkit-backdrop-filter: blur( 6px ) !important;
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.header .logo img {
+    width: auto; /* Redimensiona o logotipo */
+    height: 42px;
+    margin-left: 20px; /* Move o logotipo um pouco para a direita */
+    z-index: 9999 !important;
+    margin-top: 7px;
+    
+}
+
+.header .help {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Move a frase e o botão um pouco para a esquerda */
+}
+
+.header .help span {
+    font-size: 14px;
+    color: #14334d;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.header .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.button-ajuda {
+    border-radius: 6px; /* Botão também com bordas arredondadas */
+    border: none;
+    background-color: #0d6efd;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.button-ajuda:hover {
+    background-color: #085ad4;
+    transition: background-color 0.3s;
+
+}
+/********************************************/
+
+/* Card container */
+.card-container {
+    margin-top: -500px !important;
+    position: absolute;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    perspective: 1000px;
+
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta o lado não visível */
+    transition: transform 0.8s ease-in-out; /* Suaviza a rotação */
+    border-radius: 10px;
+}
+
+/* Card da frente (Login Form) */
+.card-front {
+    background: rgba(255, 255, 255, 0.35); /* Fundo sem opacidade total para o efeito vidro */
+    z-index: 2;
+    transform: rotateY(0deg);
+
+}
+
+/* Card de trás (Registro Form) */
+.card-back {
+    background: rgba( 255, 255, 255, 0.35 ); 
+    transform: rotateY(180deg);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+/* Aplicar o efeito de flip quando a classe "flipped" for adicionada */
+.card-container.flipped .card-front {
+    transform: rotateY(-180deg); /* Vira o card da frente */
+
+}
+
+.card-container.flipped .card-back {
+    transform: rotateY(0deg); /* Vira o card de trás */
+
+}
+
+/*********************************************/
+/* Outras estilizações que você já possui */
+.welcome-message {
+    text-align: center;  
+    font-size: 24px;  
+    color: #495f7e;  
+    margin-top: -10px;
+}
+
+/* Container de login */
+.login-container {
+    width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 4px 4px 7px rgba(25, 39, 47, 0.316);
+    backdrop-filter: blur(6px) !important; /* Efeito vidro */
+    -webkit-backdrop-filter: blur(6px) !important; /* Suporte para WebKit */
+}
+
+
+/* Label acima dos campos */
+.input-field label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d293a;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Campo de input */
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    color: #243B55;
+}
+
+.input-field input {
+    width: calc(100% - 20px); /* Mantém os inputs dentro do container */
+    max-width: 360px; /* Largura máxima para evitar que ultrapassem o container */
+    padding: 10px 10px 10px 40px;
+    outline: none; /* Remove o contorno padrão ao focar */
+    border: 1px solid #d6d9de;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    transition: border 0.3s ease; /* Anima a transição da borda */
+    color: #495f7e;
+    font-size: 16px;
+}
+
+.input-field input:disabled {
+    background-color: #ccd5d8ec;
+}
+
+.input-field input:hover, 
+.input-field input:focus {
+    border: 1px solid #b1b6c0;
+}
+
+.campo-data input:focus {
+    border: 2px solid #0b98f6;
+    box-shadow: 0 0 3px #007bff;
+}
+
+.input-field input.invalid {
+    border-color: red;
+}
+
+.input-field input.incompatible {
+    border-color: #FFA500;
+}
+
+.campo-data input.incompatible {
+    border-color: #FFA500;
+    box-shadow: none;
+}
+
+.campo-data input.invalid {
+    border-color: red;
+    box-shadow: none;
+}
+/* Quando a mensagem é visível, ajusta o ícone */
+.input-field.with-message i {
+    top: 55%; /* Ajuste o valor para reposicionar o ícone mais para cima */
+}
+
+.input-field input.valid {
+    border-color: #17ba17;
+}
+
+.campo-data input.valid {
+    border-color: #17ba17;
+    box-shadow: none;
+}
+
+
+.message {
+    display: block;
+    visibility: hidden;
+    overflow: hidden; 
+    height: 15px;
+    transition: visibility 0.3s ease;
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+    margin: 0;
+    margin-top: 2px;
+    visibility: hidden;
+    text-align: left; /* Alinha a mensagem à esquerda */
+}
+
+.message.visible {
+    visibility: visible;
+}
+
+/* validação senha */
+.message_senha {
+    display: block;
+    visibility: hidden;
+    overflow: hidden; 
+    height: 15px;
+    transition: visibility 0.3s ease;
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+    margin: 0;
+    margin-top: 2px;
+    visibility: hidden;
+    text-align: left; /* Alinha a mensagem à esquerda */
+}
+
+.message_senha.visible {
+    visibility: visible;
+    color: #038b37; /* Para quando a senha for válida */
+}
+.message_cpf {
+    display: block;
+    visibility: hidden;
+    overflow: hidden; 
+    height: 15px;
+    transition: visibility 0.3s ease;
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+    margin: 0;
+    margin-top: 2px;
+    visibility: hidden;
+    text-align: left; /* Alinha a mensagem à esquerda */
+}
+.message_cpf.visible {
+    visibility: visible;
+
+}
+/* Label acima dos campos */
+.input-field-senha label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d293a;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Campo de input */
+.input-field-senha {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field-senha input:disabled {
+    background-color: #ccd5d8ec;
+}
+
+.input-field-senha i {
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #243B55;
+}
+
+.input-field-senha input {
+    width: calc(100% - 20px); /* Mantém os inputs dentro do container */
+    max-width: 360px; /* Largura máxima para evitar que ultrapassem o container */
+    padding: 10px 10px 10px 40px;
+    outline: none; /* Remove o contorno padrão ao focar */
+    border: 1px solid #d6d9de;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    transition: border 0.3s ease; /* Anima a transição da borda */
+    color: #495f7e;
+    font-size: 16px;
+}
+
+.input-field-senha input:hover, 
+.input-field-senha input:focus {
+    border: 1px solid #b1bac0;
+}
+
+
+.input-field-senha input.invalid {
+    border-color: red;
+}
+
+.input-field-cpf input.invalid {
+    border-color: red;
+}
+
+.input-field-senha.with-message i {
+    top: 55%; /* Ajuste o valor para reposicionar o ícone mais para cima */
+}
+
+.input-field-senha input.valid {
+    border-color: #17ba17;
+}
+
+.input-field-cpf input.valid {
+    border-color: #17ba17;
+}
+
+/* Botão de Alterar senha */
+.alter-button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px; /* Botão também com bordas arredondadas */
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.alter-button:hover {
+    background-color: #218838;
+}
+.alter-button:disabled {
+    cursor: not-allowed;
+    background-color: #135321;
+
+}
+.alter-button:disabled:hover {
+    background-color: #135321; /* Mantém a mesma cor do estado desativado */
+    cursor: not-allowed; /* Mantém o cursor para não permitido */
+}
+
+
+/* Botão de login */
+.login-button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px; /* Botão também com bordas arredondadas */
+    border: none;
+    background-color: #0d6efd;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+/* Estilo para o botão quando estiver desabilitado */
+button:disabled {
+    cursor: not-allowed; /* Remover o cursor pointer */
+    background-color: #1C2C43; /* Cor azul com tom de cinza */
+    color: #98a0a7; /* Cor do texto mais suave */
+
+}
+button:disabled:hover {
+    cursor: not-allowed; /* Remover o cursor pointer */
+    background-color: #1C2C43; /* Cor azul com tom de cinza */
+    color: #98a0a7; /* Cor do texto mais suave */
+
+}
+.login-button:hover {
+    background-color: #085ad4;
+}
+
+/* Powered by logo */
+.powered-by {
+    margin-top: -0.5%;
+    position: absolute;
+    left: 52%; /* Posiciona o elemento no centro horizontal */
+    transform: translateX(-50%);
+}
+
+/* Rodapé */
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #14334d;
+    font-weight: 500;
+    text-align: center;
+    padding: 1px 0;
+    background: rgba(255, 255, 255, 0.585);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+}
+
+.page-footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.page-footer a {
+    color: #8791be;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: none;
+    color: #085AD4;
+}
+
+.separator {
+    color: #8791be;
+}
+
+/* Estilização do separador */
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.separador .line {
+    border: 0;
+    height: 0.5px;
+    background-color: #ffffff;
+    flex-grow: 0.5;
+    margin: 0 10px;
+}
+
+.separador .text {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Estilização do link de registro */
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link span {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilo base para o texto */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: inherit; /* Garante que a cor do texto não seja sobrescrita */
+}
+
+/* Texto do tooltip */
+.tooltip::after {
+    content: attr(data-tooltip); /* Captura o valor do atributo data-tooltip */
+    visibility: hidden;
+    width: 250px; /* Ajuste a largura */
+    background-color: #0d6efd;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Exibe o tooltip acima do texto */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px; /* Ajuste de tamanho */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pequena seta */
+.tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #0d6efd transparent;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Mostra o tooltip no hover */
+.tooltip:hover::after,
+.tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Garante que o texto original seja visível */
+.tooltip span {
+    visibility: visible;
+}
+

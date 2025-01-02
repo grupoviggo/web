@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(#013565, #013565, #01213e, #00000a);
+    color: #fff;
+}
+
+
+nav {
+    background-color: #051729d7;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+/* Estilos personalizados para o botão SAIR */
+.btn-voltar {
+    color: #013565; /* Cor do texto branca */
+    font-weight: bold; /* Peso da fonte em negrito */
+}
+
+.white-svg {
+    filter: invert(100%); /* Inverte as cores da imagem para branco */
+}
+
+.table{
+    margin-top: 30px;
+}
+
+.table td, .table th {
+    border-top: none; /* Remove as bordas das células */
+    color: #c79500; /* Cor dos itens */
+    vertical-align: middle; /* Alinhamento vertical central */
+}
+
+.table td img {
+    margin-right: -20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.table tr td {
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+.table tr:hover td {
+    border-color: transparent; /* Remove a linha de borda ao passar o mouse sobre a linha */
+}
+
+.table tr td a {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    color: #013565; /* Cor do texto dos links */
+    transition: color 0.3s; /* Transição suave para a cor do texto */
+}
+
+.table tr td a:hover {
+    color: #fff; /* Cor do texto dos links ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.table tr:hover td:not(:first-child) {
+    border-color: #fff; /* Cor da borda ao passar o mouse sobre o texto do link */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hr-white {
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0), #118DFF, rgba(0, 81, 255, 0)); /* Gradiente para tornar as pontas mais suaves */
+    border: none;
+    filter: blur(2px); /* Efeito blur */
+    position: relative;
+    top: 100px;
+}
+
+
+
+
+.container {
+    max-width: 670px; /* Largura máxima do container */
+
+}
+
+
+
+.item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px; /* Deixa os itens com bordas ovais */
+    padding: 15px 20px;
+    transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Aumenta levemente o item ao passar o mouse */
+    background-color: #ffc107;
+}
+
+.item img {
+    margin-right: 10px;
+}
+
+.item a {
+    color: #013565;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+.item span{
+    padding-left: 40px;
+}
+
+.item a:hover {
+    color: #fff; /* Muda a cor do texto ao passar o mouse */
+}
+
+h3{
+    margin-top: -21px;
+}
+
+@media (max-width: 600px) {
+    .item {
+        padding: 10px 15px;
+    }
+    .item a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-device-width: 900px) {
+    h3 { 
+        font-size: 16px; 
+    }
+}
+
+@media only screen and (max-device-width: 900px) {
+    h3 { 
+        font-size: 20px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .white-svg {
+        margin-left: 120px;
+        height: 35px;
+    }
+}

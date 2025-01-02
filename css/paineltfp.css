@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(#ffffff, #ffffff, #ddeaefb9);
+    color: #fff;
+}
+
+nav {
+    background-color: #013565;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+/* Estilos personalizados para o botão SAIR */
+.btn-voltar {
+    color: #013565; /* Cor do texto branca */
+    font-weight: bold; /* Peso da fonte em negrito */
+}
+.btn-sair {
+    color: #fff; /* Cor do texto branca */
+    font-weight: bolder; /* Peso da fonte em negrito */
+}
+
+.white-svg {
+    filter: invert(100%); /* Inverte as cores da imagem para branco */
+}
+
+.table{
+    margin-top: 30px;
+}
+
+.table td, .table th {
+    border-top: none; /* Remove as bordas das células */
+    color: #c79500; /* Cor dos itens */
+    vertical-align: middle; /* Alinhamento vertical central */
+}
+
+.table td img {
+    margin-right: -20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.table tr td {
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+.table tr:hover td {
+    border-color: transparent; /* Remove a linha de borda ao passar o mouse sobre a linha */
+}
+
+.table tr td a {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    color: #013565; /* Cor do texto dos links */
+    transition: color 0.3s; /* Transição suave para a cor do texto */
+}
+
+.table tr td a:hover {
+    color: #fff; /* Cor do texto dos links ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.table tr:hover td:not(:first-child) {
+    border-color: #fff; /* Cor da borda ao passar o mouse sobre o texto do link */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hr-white {
+    border: solid 1.2px #ffc107da;
+    position: relative;
+    top: 100px;
+}
+
+h3{
+    color: #013565;
+    font-weight: bolder;
+    margin-top: -21px;
+}
+
+.vertical-divider {
+    border-left: 2px dotted #84aab9ee; /* Cor e estilo da linha pontilhada */
+    height: 50px; /* Altura da linha */
+    margin-left: 15px; /* Espaço à esquerda (ajuste conforme necessário) */
+    margin-right: 15px; /* Espaço à direita (ajuste conforme necessário) */
+    display: inline-block; /* Para garantir que a linha esteja na mesma linha dos outros elementos */
+    vertical-align: middle; /* Alinha verticalmente no meio */
+}
+
+
+.label-text {
+    color: #FFA500; 
+
+}
+
+.container {
+    max-width: 670px; /* Largura máxima do container */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background-color: #ffc107;
+    border-radius: 30px; /* Deixa os itens com bordas ovais */
+    padding: 15px 20px;
+    transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Aumenta levemente o item ao passar o mouse */
+    background-color: #967206;
+}
+
+.quadro_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffc107;
+    font-weight: bold; /* Peso da fonte */
+    border-radius: 15px;
+    padding: 35px;
+    color: #013565; /* Cor do texto */
+    transition: transform 0.3s ease;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.quadro_info:hover {
+    transform: scale(1.05);
+    background-color: #967206;
+    color: #ffffff;
+}
+
+.item img {
+    margin-right: 10px;
+}
+
+.item a {
+    color: #013565;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+.container-quadrados a {
+    color: #013565;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif; /* Opcional: escolha de fonte */
+    font-size: 16px; /* Opcional: ajuste do tamanho da fonte */
+    transition: color 0.3s ease;
+}
+
+.item span{
+    padding-left: 40px;
+}
+
+.item a:hover {
+    color: #fff; /* Muda a cor do texto ao passar o mouse */
+}
+
+.botao-cadastro {
+    background-color: transparent; /* Cor de fundo transparente */
+    border: none; /* Remove a borda */
+    padding: 2px 6px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: color 0.3s ease; /* Transição para efeito ao passar o mouse */
+    outline: none; /* Remove a borda ao focar */
+}
+
+ .botao-cadastro:hover {
+    color: #000; /* Cor do texto ao passar o mouse (ajuste como preferir) */
+ } 
+
+ .botao-cadastro:focus {
+    outline: none; /* Remove a borda ao clicar ou focar no botão */
+ } 
+
+ dialog {
+    width: 90%; /* Largura do modal */
+    max-width: 1000px; /* Largura máxima */
+    height: auto; /* Altura automática com base no conteúdo */
+    max-height: 95%; /* Altura máxima do modal */
+    overflow: auto; /* Permite rolagem se o conteúdo for muito grande */
+    border: none; /* Remove bordas padrão */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    backdrop-filter: blur(5px); /* Adiciona um efeito de desfoque ao fundo */
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #013565; /* Escolha sua cor */
+    padding: 15px 20px;
+    margin: 2px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+    width:100%;
+    box-sizing: border-box;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.modal-header img {
+    height: 40px; /* Ajuste a altura da imagem */
+    margin-right: 10px;
+}
+
+#modalDialog {
+    padding: 1; /* Remove o padding interno do modal */
+}
+
+/* Estilos para o contêiner do formulário */
+.form-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Permite que os campos quebrem para a linha de baixo em telas menores */
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+label {
+    margin-bottom: 5px;
+    /* font-weight: bold; */
+}
+input, select {
+    padding: 5px;
+    width: 100%; /* Ajuste a largura para melhor responsividade */
+    font-size: 1em;
+}
+
+.close-button {
+    position: absolute;
+    top: 2000px;
+    right: 1100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    outline: none; /* Remove a borda ao focar */
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+}
+
+.close-button,
+.close-button:focus,
+.close-button:active,
+.close-button img:focus,
+.close-button img:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.close-button:hover {
+    transform: scale(0.7);
+    box-shadow: none; /* Remove qualquer borda de foco adicional */
+}
+
+.close-button:hover .image-dir-1 {
+    content: url('../img/x2.png'); /* Troca a imagem ao passar o mouse */
+    width: 20px; /* Garante que a imagem substituta mantenha o mesmo tamanho */
+    height: 20px;
+    transform: scale(1); /* Evita o redimensionamento adicional */
+}
+
+
+.close-button img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.close-button:focus {
+    outline: none; /* Remove a borda ao clicar ou focar no botão */
+ } 
+
+@media (max-width: 600px) {
+    .item {
+        padding: 10px 15px;
+    }
+    .item a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-device-width: 900px) {
+    h3 { 
+        font-size: 16px; 
+    }
+}
+
+@media only screen and (max-device-width: 900px) {
+    h3 { 
+        font-size: 20px; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .white-svg {
+        margin-left: 120px;
+        height: 35px;
+    }
+}

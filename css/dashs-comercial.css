@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #013565;
+    overflow: hidden; 
+}
+
+.iframe-container {
+    width: 100%;
+    height: 100%;
+    background-color: #013565;
+    z-index: 0;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    zoom: 118%;
+     
+
+}
+@media only screen and (max-device-width: 1366px) {
+.iframe-container{width: 100%;}
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #013565;
+    margin:  0 auto 0; /* Removida a margem superior */
+    display: block;
+    position: absolute;
+    touch-action: none; /* Desativa o zoom dentro do iframe em dispositivos móveis */
+    z-index: 100;
+    border: none;
+    overflow: hidden;
+                
+}
+
+.bar-direita {
+     width: 15px;
+     height: 100vh;
+     right: 0;
+     position: absolute;
+     background-color: #013565;
+     z-index: 98;
+}
+
+        .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 9999; 
+        top: -43px; 
+        opacity: 0.1;
+        transition: top 0.3s;
+        background-color: #013565;
+    }
+
+    .navbar:hover {
+        background-color: #042049;
+        top: 0; 
+        opacity: 0.9;
+    }
+
+    .navbar-nav .nav-item .form-inline {
+        margin-top: 8px;
+    }
+        .rodape {
+            background-color: #013565;
+            position: fixed;
+            width: 100%;
+            height: 84px;
+            bottom: 0;
+            display: block;
+            overflow: hidden;
+            z-index: 999999; /* Coloca a barra de navegação sobre o iframe */
+        }
+        /* Estilos personalizados para o botão SAIR */
+        .btn-voltar {
+            color: #013565; 
+            font-weight: bold;
+            margin-right: 6px; 
+        }
+        .btn-tela {
+            color: #013565; 
+            font-weight: bold;
+            margin-right: 6px; 
+            
+        }
+
+        .btn-sair {
+            color: #fff; 
+            font-weight: bold;
+            margin-right: 20px; 
+        }

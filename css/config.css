@@ -1,0 +1,119 @@
+.user-info-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.user-info-card h3 {
+    font-size: 1.5em;
+    color: #112439;
+    margin-bottom: 15px;
+}
+
+.user-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+.user-detail:last-child {
+    border-bottom: none;
+}
+
+.user-detail strong {
+    color: #333;
+}
+
+.user-detail span {
+    color: #666;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-actions button {
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.profile-actions button:hover {
+    opacity: 0.9;
+}
+
+.profile-actions button:first-child {
+    background-color: #112439;
+}
+
+.profile-actions .reset-senha {
+    background-color: #4c5d70;
+}
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+.modal-dialog {
+    z-index: 1050 !important;
+}
+
+/* Modal maior */
+#cropModal .modal-dialog {
+    max-width: 1000px; /* Maior largura */
+    margin: 2rem auto; /* Espaçamento ao redor */
+}
+
+#cropModal .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Altura do container */
+    padding: 0; /* Remove espaçamento interno */
+}
+
+#cropModal .modal-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Layout vertical */
+    align-items: stretch; /* Estica os filhos */
+}
+
+/* Título alinhado à esquerda */
+#cropModal .modal-header {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center;
+}
+
+.modal-line {
+    border: 1px solid #ddd; /* Linha cinza */
+    margin: 0; /* Remove espaçamento extra */
+}
+
+#image {
+    max-width: 100%; /* Usa a largura completa do container */
+    max-height: 100%; /* Usa a altura completa */
+    object-fit: contain; /* Evita distorções */
+    border: none; /* Borda opcional */
+}
+
+/* Botões alinhados à esquerda */
+#cropModal .modal-footer {
+    display: flex;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Fundo escuro do modal */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escurecido */
+}

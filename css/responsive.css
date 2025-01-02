@@ -1,0 +1,39 @@
+/* Estilos específicos para telas menores */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .logo img {
+        width: 80%; /* Ajusta a largura para 80% do container */
+        max-width: 100px; /* Tamanho máximo ajustado */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Garante que fique centralizado */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    .login-container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .input-field,
+    .input-field-senha {
+        margin-bottom: 10px;
+    }
+
+    .input-field label,
+    .input-field-senha label {
+        font-size: 0.8em;
+    }
+
+    .login-button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .powered-by img {
+        max-width: 150px;
+    }
+}

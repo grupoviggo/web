@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #013565;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white; /* Definir a cor do texto como branco */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+h1 {
+    font-weight: bold;
+}
+h4 {
+    font-weight:bold;
+    margin-top: 30px;
+    color: #6194B2;
+}
+
+.logo {
+    width: 100px; 
+    height: auto; 
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    filter: invert(100%); 
+}
+
+.btn {
+position: absolute;
+top: 20px; 
+right: 20px;
+background-color: red; /* Cor vermelha */
+border-radius: 6px; /* Cantos arredondados */
+padding: 6px 16px; /* Ajuste o preenchimento conforme necessário */
+color: white; /* Cor do texto */
+font-size: 14px; /* Tamanho da fonte */
+border: none; /* Remova a borda */
+cursor: pointer; /* Mude o cursor para indicar que é clicável */
+}
+
+/* Adicione estilos de hover se desejar */
+.btn:hover {
+background-color: darkred; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* botão de LOG-OUT */
+.Btn {
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #ffc107;
+  }
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sign svg {
+    width: 17px;
+  }
+  .sign svg path {
+    fill: #013565;
+  }
+  .text {
+    position: absolute;
+    left: 25%;
+    width: 0%;
+    opacity: 0;
+    color: #013565;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  .Btn:hover {
+    width: 150px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  .Btn:hover .sign {
+    width: 26%;
+    transition-duration: .3s;
+    padding-left: 3px;
+  }
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 110px;
+  }
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
+  /* FIM LOG-OUT */
+
+.Nexus {
+    width: 190px; 
+    height: auto; 
+    position: absolute; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.pgi_img {
+  width: 210px; 
+  height: auto; 
+  position: absolute; 
+  top: 20px; 
+  left: 50%; 
+  transform: translateX(-50%);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Adicionado margem superior */
+}
+
+.half-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+.styled-hr {
+    width: 700px;
+    height: 3px;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0), #118DFF, rgba(0, 0, 255, 0)); /* Gradiente para tornar as pontas mais suaves */
+    border: none;
+    margin: -6px auto;
+    filter: blur(2px); /* Efeito blur */
+}
+.card {
+    width: 285px;
+    height: 195px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.07);
+    background-color: #f0bd25f4;
+}
+.card:hover .image-dir {
+  content: url('../img/chart-diretoria2.png'); /* Troca a imagem ao passar o mouse */
+}
+.card:hover .image-pgi-dir {
+  content: url('../img/tfpimg2.png'); /* Troca a imagem ao passar o mouse */
+}
+.card:hover .image-dir2 {
+  content: url('../img/chart-comercial2.png'); /* Troca a imagem ao passar o mouse */
+}
+.card:hover .image-dir3 {
+  content: url('../img/chart-rh2.png'); /* Troca a imagem ao passar o mouse */
+}
+.card:hover .image-pgi-dir3 {
+  content: url('../img/usuarios2.png'); /* Troca a imagem ao passar o mouse */
+}
+.card:hover .image-dir4 {
+  content: url('../img/chart-bko2.png'); /* Troca a imagem ao passar o mouse */
+}
+.card img {
+  margin-top: 16px;
+}
+.title {
+    color: #013565;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-device-width: 350px) {
+.container { width:100%;}
+}
+@media only screen and (max-device-width: 450px) {
+    .container { width:100%;}
+    }
+@media only screen and (max-device-width: 600px) {
+.container { width:100%;}
+}
+
+@media only screen and (max-device-width: 900px) {
+.container { width:200px;}
+}
+
+@media only screen and (max-device-width: 450px) {
+    .btn { background-color: transparent; color: #f2c811; margin-top: 10px;}
+    }
+    
+    @media only screen and (max-device-width: 450px) {
+        h4 { margin-top: -40px; }
+        }
+
+        @media only screen and (max-device-width: 450px) {
+            .styled-hr { width: 280px;}
+            }
+
+@media only screen and (max-device-width: 450px) {
+.card { width:126px; height: 130px; }
+}
+
+
+@media only screen and (max-device-width: 900px) {
+.card { width:136px;  height: 130px; }
+}
+
+@media only screen and (max-device-width: 450px) {
+h1 { font-size: 23px; }
+}
+@media only screen and (max-device-width: 900px) {
+h1 { font-size: 28px; }
+}
+@media only screen and (max-device-width: 450px) {
+.title {margin-bottom: 5px; font-size: 15px; }
+}
+@media only screen and (max-device-width: 900px) {
+.title {margin-bottom: 2px; font-size: 20px; }
+}
+@media only screen and (max-device-width: 450px) {
+img {width: 70px; height: 70px; }
+}
+@media only screen and (max-device-width: 900px) {
+img {width: 80px; height: 80px; }
+}
+@media only screen and (max-width: 450px) {
+.logo {
+display: none;
+}
+}

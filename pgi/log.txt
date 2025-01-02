@@ -1,0 +1,194 @@
+Array
+(
+)
+Dados recebidos: Array
+(
+)
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+    [codigo_venda] => 12345
+    [backoffice] => backoffice_user
+    [nome_cliente] => João da Silva
+    [doc_cliente] => 123.456.789-00
+    [oferta] => Plano Fixo
+    [produtos] => Plano Fixo; Plano Móvel
+)
+
+codigo_venda: 12345, backoffice: backoffice_user, nome_cliente: João da Silva, doc_cliente: 123.456.789-00, oferta: Plano Fixo, produtos: Plano Fixo; Plano Móvel
+Dados recebidos: Array
+(
+    [codigo_venda] => 12345
+    [backoffice] => backoffice_user
+    [nome_cliente] => Joao da Silva
+    [doc_cliente] => 123.456.789-00
+    [oferta] => Plano Fixo
+    [produtos] => Plano Fixo; Plano Movel
+)
+
+codigo_venda: 12345, backoffice: backoffice_user, nome_cliente: Joao da Silva, doc_cliente: 123.456.789-00, oferta: Plano Fixo, produtos: Plano Fixo; Plano Movel
+Erro na preparação da consulta: Unknown column 'BACKOFFICE' in 'field list'
+Dados recebidos: Array
+(
+    [codigo_venda] => 12345
+    [backoffice] => backoffice_user
+    [nome_cliente] => Joao da Silva
+    [doc_cliente] => 123.456.789-00
+    [oferta] => Plano Fixo
+    [produtos] => Plano Fixo; Plano Movel
+)
+
+codigo_venda: 12345, backoffice: backoffice_user, nome_cliente: Joao da Silva, doc_cliente: 123.456.789-00, oferta: Plano Fixo, produtos: Plano Fixo; Plano Movel
+Dados recebidos: Array
+(
+    [codigo_venda] => 12345
+    [backoffice] => backoffice_user
+    [nome_cliente] => Joao da Silva
+    [doc_cliente] => 123.456.789-00
+    [oferta] => Plano Fixo
+    [produtos] => Plano Fixo; Plano Movel
+)
+
+codigo_venda: 12345, backoffice: backoffice_user, nome_cliente: Joao da Silva, doc_cliente: 123.456.789-00, oferta: Plano Fixo, produtos: Plano Fixo; Plano Movel
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+    [avancar] => 
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+    [avancar] => 
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+    [avancar] => 
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: 
+Dados recebidos: Array
+(
+    [codigo_venda] => 12345
+    [backoffice] => backoffice_user
+    [nome_cliente] => Joao da Silva
+    [doc_cliente] => 123.456.789-00
+    [oferta] => Plano Fixo
+    [produtos] => Plano Fixo; Plano Movel
+)
+
+codigo_venda: 12345, backoffice: backoffice_user, nome_cliente: Joao da Silva, doc_cliente: 123.456.789-00, oferta: Plano Fixo, produtos: ; 
+Dados recebidos: Array
+(
+    [avancar] => 
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Dados recebidos: Array
+(
+    [codigo_venda] => 12345
+    [backoffice] => backoffice_user
+    [nome_cliente] => João da Silva
+    [doc_cliente] => 123.456.789-00
+    [oferta] => Plano Fixo
+    [dadosPainelFixa] => Plano Fixo
+    [dadosPainelMovel] => Plano Móvel
+)
+
+codigo_venda: 12345, backoffice: backoffice_user, nome_cliente: João da Silva, doc_cliente: 123.456.789-00, oferta: Plano Fixo, produtos: Plano Fixo; Plano Móvel
+Dados recebidos: Array
+(
+    [avancar] => 
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Iniciando script
+Iniciando script
+Dados recebidos: Array
+(
+    [avancar] => 
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 
+Iniciando script
+Dados recebidos: Array
+(
+)
+
+codigo_venda: , backoffice: , nome_cliente: , doc_cliente: , oferta: , produtos: ; 

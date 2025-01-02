@@ -1,0 +1,403 @@
+        /* Estilos gerais */
+        * {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+          transition: all 0.3s ease; /* Suaviza todas as propriedades */
+          -webkit-font-smoothing: antialiased; /* Para Chrome no macOS */
+          -moz-osx-font-smoothing: grayscale; /* Para Firefox no macOS */
+          transition: all 0.3s ease; /* Suaviza todas as propriedades */
+      }
+body{
+    overflow-y: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    transition: all 0.3s ease; /* Suaviza todas as propriedades */
+    -webkit-font-smoothing: antialiased; /* Para Chrome no macOS */
+    -moz-osx-font-smoothing: grayscale; /* Para Firefox no macOS */
+    transition: all 0.3s ease; /* Suaviza todas as propriedades */
+  }
+  #content {
+    overflow-y: hidden; 
+    height: 100vh; /* Ocupa a altura total da janela */
+    flex-direction: column;
+  }
+  #container-content {
+    height: auto !important; /* Define a altura máxima do contêiner */
+    overflow-y: auto !important; /* Permite o scroll vertical */
+    flex-grow: 1;
+  }
+  
+  /* Estilo da barra de rolagem para navegadores baseados em WebKit (Chrome, Safari) */
+  #container-content::-webkit-scrollbar {
+    width: 8px; /* Define a largura da barra de rolagem */
+  }
+  
+  #container-content::-webkit-scrollbar-track {
+    background: #191919; /* Cor do fundo da barra de rolagem */
+    border-radius: 4px;
+  }
+  
+  #container-content::-webkit-scrollbar-thumb {
+    background-color: #191919; /* Cor do "polegar" da barra de rolagem */
+    border-radius: 4px;
+    border: 2px solid #191919; /* Adiciona uma borda para criar o efeito de espaçamento */
+  }
+  
+  /* Estilo da barra de rolagem para Firefox */
+  #container-content {
+    scrollbar-width: thin; /* Define uma largura fina para a barra de rolagem */
+    scrollbar-color: #191919 #191919; /* Define a cor do "polegar" e do fundo da barra de rolagem */
+  }
+  .titulo {
+    background-color: #191919;
+  }
+  .subtitulo{
+    color: #d1dfe9;
+  }
+  .panel2 {
+    max-height: 560px; /* Define a altura máxima do contêiner */
+    overflow-y: auto; /* Permite o scroll vertical */
+    flex-grow: 1;
+  }
+  /* Estilo da barra de rolagem para navegadores baseados em WebKit (Chrome, Safari) */
+  .panel2::-webkit-scrollbar {
+    width: 8px; /* Define a largura da barra de rolagem */
+  }
+  
+  .panel2::-webkit-scrollbar-track {
+    background: #191919; /* Cor do fundo da barra de rolagem */
+    border-radius: 4px;
+  }
+  
+  .panel2::-webkit-scrollbar-thumb {
+    background-color: #191919; /* Cor do "polegar" da barra de rolagem */
+    border-radius: 4px;
+    border: 2px solid #191919; /* Adiciona uma borda para criar o efeito de espaçamento */
+  }
+  
+  /* Estilo da barra de rolagem para Firefox */
+  .panel2 {
+    scrollbar-width: thin; /* Define uma largura fina para a barra de rolagem */
+    scrollbar-color: #191919 #191919; /* Define a cor do "polegar" e do fundo da barra de rolagem */
+  }
+  /* Estilos para a Tabela */
+  .table {
+      width: 100%;
+      border-collapse: separate; 
+      border-spacing: 0 10px; 
+      table-layout: fixed;
+      border: none;
+      overflow-y: auto;
+      margin-top: -24px;
+    }
+    .table th {
+      background-color: #191919 !important;
+    }
+
+    .table th, .table td {
+      text-align: center;
+      font-size: 13px;
+      vertical-align: middle;
+      white-space: nowrap;
+      color: #fff;
+    }
+    
+    .table td {
+      border: 1px solid #43475e; 
+      border-radius: 10px; 
+      padding: 10px;
+      font-size: 13.5px;
+      color: #fff;
+    }
+
+    .custom{
+            
+      transition: opacity 0.3s;
+  }
+    .custom:hover{
+      border: 1px solid #007bff !important; 
+      box-shadow: 2px 2px 4px rgb(4, 98, 240) !important;
+      border-radius: 20px;
+      transition: 0.3s ease;
+      transition: box-shadow 0.3s ease; 
+  }
+
+   #no-right-border {
+      border-right: none !important; /* Remove apenas a borda direita */
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+      border-left: none !important; /* Remove apenas a borda esquerda */
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+    }
+    
+   #no-left-border {
+      border-left: none !important; /* Remove apenas a borda direita */
+      border-radius: 0px !important;
+      border-right: none !important;
+    }
+    
+   #no-left-border-middle {
+      border-left: none !important; /* Remove apenas a borda direita */
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+      border-right: none !important; 
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+  
+    .col-center-doc {
+      text-align: center;
+      border-left: none !important; /* Remove apenas a borda direita */
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+      border-right: none !important; 
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+  
+    .no-left-border-left {
+      width: 2%;
+      border-right: none !important; /* Remove apenas a borda direita */
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+      border-top-left-radius: 20px !important;
+      border-bottom-left-radius: 20px!important;
+    }
+    
+    .no-left-border-right {
+      width: 2%;
+      border-left: none !important; /* Remove apenas a borda esquerda */
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+      border-top-right-radius: 20px !important;
+      border-bottom-right-radius: 20px!important;
+    }
+    
+    .table th {
+      font-weight: bold;
+      border: none;
+    }
+  
+  .table .allow-break {
+      white-space: normal; /* Permite quebra de linha nas células das últimas colunas */
+  }
+  
+  /* Ajustes de largura para outras colunas */
+  .col-checkbox {
+      width: 1.5%;
+      text-align: center;
+  }
+  
+  .col-client {
+      width: 20%;
+      white-space: nowrap;
+      text-align: center;
+  }
+  
+  .col-vazio {
+      width: 2%;
+  }
+  
+  .col-radio-group {
+      width: 7.5%;
+      text-align: center;
+  }
+  
+  .col-venc {
+      width: 7%;
+      text-align: center;
+  }
+  
+  .col-center {
+      text-align: center;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha itens à esquerda */
+    gap: 0.5rem;
+  }
+  
+  .radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin: 0;
+  }
+  
+  .radio-group label {
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .small-date-label {
+    font-size: 0.8em;
+    color: #a2b2b9;
+  }
+  
+  
+  /* Estiliza o switch */
+  .custom-switch {
+    background-color: rgb(101, 240, 101);
+  }
+  
+  .custom-radio-pago:checked {
+    background-color: rgb(101, 240, 101);
+  }
+  .custom-radio-npago:checked {
+    background-color: #ff0000;
+  }
+  
+  /* Cor quando o checkbox está marcado */
+  .custom-switch:checked {
+    background-color: #ff0000; /* Cor do fundo ao selecionar */
+  }
+  
+  .custom-switch:checked::before {
+    background-color: rgb(104, 228, 108);
+  }
+  
+  .user-status {
+    display: none; /* Inicialmente escondido */
+    font-size: 0.9em;
+    color: #333;
+    margin-left: 4px;
+    vertical-align: middle;
+    position: absolute;
+    margin-top: 35px;
+  
+  }
+  
+  .user-status .icon {
+    font-size: 1em;
+    margin-right: 5px;
+    color: black; /* Ajuste a cor do ícone */
+  
+  }
+  
+  /* Estilo para alinhar o botão à direita */
+  .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+  }
+  
+  .tooltip {
+    opacity: 0; /* Tooltip invisível por padrão */
+    transition: opacity 0.3s, transform 0.3s; /* Transição suave */
+    position: absolute; /* Para posicionar em relação ao elemento pai */
+    background-color: #0d6efd; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 12px; /* Tamanho do texto */
+    bottom: 100%; /* Posiciona o tooltip acima do elemento pai */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%) translateY(-5px); /* Ajuste para garantir que o tooltip fique acima */
+    z-index: 1; /* Garante que o tooltip fique acima de outros elementos */
+    white-space: nowrap; /* Evita quebra de linha */
+  }
+  
+  .tooltip.show {
+    opacity: 1; /* Torna o tooltip visível */
+    transform: translateX(-50%) translateY(0); /* Coloca o tooltip em sua posição final */
+  }
+  
+  
+  /* Estilo para linha destacada */
+  .highlighted {
+      background-color: #d3e4f3ce;
+      color: #0d6efd;
+      font-weight: 450;
+  }
+  
+  .highlighted td {
+    background-color: #d3e4f3ce;
+    color: #0d6efd;
+  }
+  
+  .sub-status-select {
+      max-width: 200px;  /* Ajusta conforme necessário */
+      transition: box-shadow 0.2s ease, border-color 0.2s ease;
+      font-size: 10px;
+  }
+  .sub-status-select:focus {
+      border-color: #007bff;  /* Azul padrão do Bootstrap */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  /* Estilo para o item selecionado */
+  .sub-status-select option:checked {
+      background-color: #cce5ff; /* Azul claro */
+      color: #000; /* Cor do texto */
+  }
+  /* Estilo para quando o item está em hover */
+  .sub-status-select option:hover {
+      background-color: #cce5ff; /* Azul claro */
+      color: #000; /* Cor do texto */
+  }
+  
+  .custom-form{
+    background-color: #0b1830e7 !important;
+  }
+
+  /*Estilos para campos input de formulários*/
+  /* Inputs padrão (texto, senha, data, etc.) */
+.form-control {
+  background-color: #222 !important; 
+  color: #fff; 
+  border-color: #444 !important; 
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control::placeholder {
+  color: #aaa; 
+
+}
+
+.form-control:focus {
+  background-color: #222 !important; 
+  color: #fff;
+  border-color: #007bff !important; 
+  box-shadow: 0 0 3px #007bff !important;
+}
+
+.form-select {
+  background-color: #222 !important; 
+  color: #fff; 
+  border-color: #444 !important; 
+}
+/* Estilo para a opção de placeholder no select */
+.form-select option[disabled] {
+  color: #aaa; /* Placeholder cinza claro */
+}
+
+.form-select:focus {
+  border-color: #007bff !important; 
+  box-shadow: 0 0 3px #007bff !important;
+}
+
+textarea.form-control {
+  background-color: #222 !important; 
+  color: #fff; 
+  border-color: #444 !important; 
+}
+
+textarea.form-control:focus {
+  border-color: #007bff !important;
+  box-shadow: 0 0 3px #007bff !important; 
+}
+/* Para navegadores que não suportam ::placeholder no tipo date */
+input[type="date"]::-webkit-datetime-edit {
+  color: #aaa !important; /* Cor do placeholder */
+}
+
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #aaa !important;
+}

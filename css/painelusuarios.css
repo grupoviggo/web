@@ -1,0 +1,156 @@
+/* Estilos Gerais */
+body {
+  background-color: #f7f9fc;
+}
+
+h2 {
+  color: #FFA500;
+}
+
+nav {
+  background-color: #013565;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.label-text, .label-destaque {
+  color: #FFA500;
+}
+
+/* Estilizando o container da tabela */
+.container.mt-5 {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container.mt-4 {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a Tabela */
+.table {
+  width: 100%;
+  border-collapse: separate; /* Para permitir espaçamento entre as linhas */
+  border-spacing: 0 10px; /* Espaçamento entre as linhas */
+  table-layout: fixed;
+  border: none;
+}
+
+.table th, .table td {
+  text-align: center;
+  font-size: 13px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table td {
+  border: 1px solid #a5c3dd; /* Cor das bordas */
+  border-radius: 30px; /* Arredondamento das bordas externas */
+  padding: 10px;
+}
+
+.head-light{
+  background-color: #a5c3dd;
+}
+.no-right-border {
+  border-right: none !important; /* Remove apenas a borda direita */
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.no-left-border {
+  border-left: none !important; /* Remove apenas a borda direita */
+  border-radius: 0px !important;
+  border-right: none !important;
+}
+
+.no-left-border-middle {
+  border-left: none !important; /* Remove apenas a borda direita */
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-right: none !important; 
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+
+.table th {
+  font-weight: bold;
+  border: none;
+}
+
+/* Estilos para os Botões de Ação */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-left: none !important; /* Remove apenas a borda direita */
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Outros Estilos */
+.vertical-divider {
+  border-left: 2px dotted #84aab9ee;
+  height: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+hr {
+  border: solid 1px #ffc107a3;
+}
+
+.dialog {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  max-height: 95%;
+  overflow: auto;
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+  color: #013565;
+  font-weight: bold;
+}
+
+.bolinha {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.bolinha-verde {
+  background-color: green;
+}
+
+.bolinha-vermelha {
+  background-color: red;
+}
