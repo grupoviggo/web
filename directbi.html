@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir PowerBI</title>
+    <!-- Adicione o link para o Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #013565;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+        @media only screen and (max-device-width: 400px) {
+            h1 { font-size: 16px; }
+        }
+        @media only screen and (max-device-width: 900px) {
+            h1 { font-size: 19px; }
+        }
+        #powerBIButton img {
+            width: 180px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Para acesso via smartphone, abra o relatório via aplicativo do power Bi</h1>
+<br><br><br>
+
+<!-- Substitua o botão pela imagem -->
+<div id="powerBIButton" onclick="openPowerBILink()">
+    <img src="./img/bilogo.png" alt="Baixar PowerBI">
+</div>
+
+<script>
+    function openPowerBILink() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Verifica se o dispositivo é um iPhone/iPad
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/us/app/microsoft-power-bi/id929738808";
+        } 
+        // Verifica se o dispositivo é um Android
+        else if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.microsoft.mobile.powerbic&hl=en&gl=US";
+        } 
+        // Caso contrário, redireciona para a página principal do PowerBI
+        else {
+            window.location.href = "https://powerbi.microsoft.com/";
+        }
+    }
+</script>
+
+</body>
+</html>
